@@ -18,6 +18,7 @@ function invertBadCat () {
     else {amp.src = "./images/bad_cat_close.jpg"}
 }
 
+// switches the amp pic and plays a sweet lick... Meow!
 function spookyBadCat () {
     var amp = document.getElementById("amplifier")
     if (amp.src.includes("bad_cat_close.jpg")) {
