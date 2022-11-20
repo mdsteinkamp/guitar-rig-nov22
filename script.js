@@ -9,7 +9,7 @@ document.addEventListener("click", function(e) {
     //invertBadCat();
 });
 
-
+// switches the bad cat from being right side up to upside down!
 function invertBadCat () {
     var amp = document.getElementById("pedalboard")
     if (amp.src.includes("bad_cat_close.jpg")) {
