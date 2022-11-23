@@ -29,25 +29,26 @@ function invertBadCat() {
     else {amp.src = "./images/pedalboard.jpeg"};
 }
 
-//const caparison = document.createElement("img");
-caparison = "./images/caparison.jpeg";
-
-//const prs = document.createElement("img");
-prs = "./images/prs.jpeg";
-
-//const jackson = document.createElement("img");
-jackson = "./images/jackson.jpeg";
-
-
-//this works to insert guitar into guitars div
-//document.getElementById("guitars").appendChild(jackson);
+const caparison = "./images/caparison.jpeg";
+const prs = "./images/prs.jpeg";
+const jackson = "./images/jackson.jpeg";
 
 const guitarPics = [caparison, jackson, prs];
 
-
+//cycle thru guitars on click but skipping the second element in the array
 function cycleGuitars() {
-    const currentGuitar = document.getElementById("guitarPic");
+    let currentGuitar = document.getElementById("guitarPic");
         for (let i = 0; i < guitarPics.length; i++) {
         currentGuitar.src = guitarPics[i];
+        console.log("blah");
     }
+    return i = 0;
 } 
+
+function changeImage(fileName) {
+    const img = document.querySelector("#guitarPic");
+    img.setAttribute("src", fileName)
+}
+
+//this works to insert guitar into guitars div
+//document.getElementById("guitars").appendChild(jackson);
