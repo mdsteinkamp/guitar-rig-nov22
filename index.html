@@ -7,45 +7,79 @@
     <body>
         <h1>Matt's Guitar Rig 2022!!!</h1>
         <nav>
-            <a href="url">Amplifier</a>
+            <a href="#amplifier">Amplifier</a>
             <a href="#pedalboard">Pedalboard</a>
-            <a href="url">Guitars</a>
+            <a href="#guitars">Guitars</a>
             <a href="url">Tone Samples</a>
         </nav>
-        <div>
+        <div id="amplifier">
             <p class="section_title">Amplifier: Bad Cat Hot Cat 30R</p>
-                <img id = "amplifier"
+            <p style="text-align: center; font-size: 20px;" ; > Click Me! :D</p>
+                <img id = "badCat"
                     onclick="spookyBadCat()"
                     class=images 
                     src="./images/bad_cat_close.jpg" 
                     width = 600px; 
                     alt ="Bad Cat Hot Cat 30" 
-                    title="The Bad Cat" /> 
-                        <ul>
-                            <li>30 Class A Watts</li>
-                            <li>Two Channels</li>
-                                <ol>
-                                    <li>Clean</li>
-                                    <li>Crunch</li>
-                                </ol>
-                            <li>Good vibes</li>
-                            <li>Loud as #$*@</li>
-                        </ul>
+                    title="The Bad Cat"/> 
         </div>
-        <div>
-            <a class="section_title">Pedalboard</a>
+        <div class="container">               
+            <ul class="amplist">
+                <li>30 Class A Watts</li>
+                <li>Two Channels</li>
+                    <ol>
+                        <li>Clean</li>
+                        <li>Crunch</li>
+                    </ol>
+                <li>Good vibes</li>
+                <li>Loud as #$*@</li>
+            </ul>
+        </div>
+        <div id="pedalboard">
+            <p class="section_title">Pedalboard</p>
                 <img id="pedalboard"
                 onclick="invertBadCat()"
                 class=images 
-                src="./images/bad_cat_close.jpg" 
+                src="./images/pedalboard.jpeg" 
                 width = 600px; 
-                alt ="Bad Cat Hot Cat 30" 
-                title="The Bad Cat" /> 
-
+                alt ="Pedalboard" 
+                title="Pedalboard"/> 
+        <div class="container">               
+            <ul class="pedalslist">
+                <li>MXR Analog Chorus</li>
+                <li>Boss Noise Suppressor NS-2 loops into:</li>
+                    <ul>
+                        <li>Boss Super Overdrive SD-1w</li>
+                        <li>MXR Custom Comp</li>
+                    </ul>
+                <li>Boss Tuner TU-3w</li>
+                <li>Sometimes a Boss Delay DD-3T in amp FX Loop</li>
+            </ul>
 
         </div>
-
-
+        <div id="guitars">
+            <p class="section_title">Guitars</p>
+            <p style="text-align: center; font-size: 20px;" ; > Click Me! :D</p>
+                <img id="guitarPic"            
+                onclick="cycleGuitars()"
+                class=images 
+                src="./images/caparison.jpeg"
+                width = 600px; 
+                alt = "Caparison Horus"
+                title="Caparison Horus"/> 
+                <!-- <img id="guitarPic"
+                src="./images/prs.jpeg"
+                class=images 
+                width = 600px; 
+                alt = "PRS S2 Standard 24"
+                title="PRS S2 Standard 24"/> 
+                <img id="guitarPic"
+                src="./images/jackson.jpeg"
+                class=images 
+                width = 600px; 
+                alt = "Jackson Rhoads V Special Edish"
+                title="Jackson Rhoads V Special Edish"/>  -->
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

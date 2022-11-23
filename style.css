@@ -1,5 +1,5 @@
 body {
-    background: orangered;
+    background: tan;
 }
 
 h1 {
@@ -19,11 +19,26 @@ nav a {
 
 .section_title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .images {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;}
+    text-align: center;
+}
+
+div.container {
+    text-align: center;
+}
+
+ul.amplist {
+    display: inline-block;
+    text-align: left;
+}
+
+ul.pedalslist {
+    display: inline-block;
+    text-align: left;
+}
